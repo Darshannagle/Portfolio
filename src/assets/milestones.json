@@ -1,0 +1,30 @@
+[
+  {
+    "type": "education",
+    "duration": "2020-2024",
+    "title": "B.E Computer",
+    "location": "MBIT, Anand, Gujarat",
+    "description": "this is desc\nsecond"
+  },
+  {
+    "type": "work",
+    "duration": "Jan 2024 – Mar 2024",
+    "title": "Jr. Software Engineer",
+    "location": "Maven Profcon Sevices LLP, Ahmedabad ",
+    "description": "Contributed to the design, development, and maintenance of web-based applications using Node.js and MongoDB.\n • Collaborated with frontend team to deliver features on time.\n • Implemented REST APIs and backend logic, Resolved bugs, optimized queries, and performed regular code refactoring for better maintainability."
+  },
+  {
+    "type": "work",
+    "duration": "May 2024 – Apr 2024",
+    "title": "Backend Developer",
+    "location": "Groovy Technoweb ,Nadiad",
+    "description": "Designed and developed scalable RESTful APIs and  microservices using Node.js, Express, and MongoDB/SQL.\n• Optimized server-side logic, database queries, resulting in reduced response times.\n• Integrated third-party services, including payment gateways, authentication providers ( JWT), and cloud storage solutions (Azure).\n• Implemented user authentication, authorization, and session management to enhance security across multiple applications.\n•Collaborated with front-end developers,product managers,and stakeholders to gather requirements and deliver seamless user experiences.\n•Developed database schemas, managed migrations, and wrote complex queries using Sequelize/Mongoose,ensuring data consistency and performance optimization.\n•maintained high code quality through unit testing (Jest) .\n•Monitored and maintained server infrastructure,troubleshooting and resolving issues .\n• Key Technologies: Node.js, Express, MongoDB, SQL,Sequelize, REST APIs, Microservices, Git, JWT, Unit Testing(Jest,SonarQube),Azure Data Studio"
+  },
+  {
+    "type": "work",
+    "duration": "Dec 2024 – Apr 2024",
+    "title": "Java Developement Intern",
+    "location": " Conceptserve Technologies Pvt. Ltd,Ahmedabad",
+    "description": "Designed and developed scalable RESTful APIs and  microservices using Node.js, Express, and MongoDB/SQL.\n• Optimized server-side logic, database queries, resulting in reduced response times.\n• Integrated third-party services, including payment gateways, authentication providers ( JWT), and cloud storage solutions (Azure).\n• Implemented user authentication, authorization, and session management to enhance security across multiple applications.\n•Collaborated with front-end developers,product managers,and stakeholders to gather requirements and deliver seamless user experiences.\n•Developed database schemas, managed migrations, and wrote complex queries using Sequelize/Mongoose,ensuring data consistency and performance optimization.\n•maintained high code quality through unit testing (Jest) .\n•Monitored and maintained server infrastructure,troubleshooting and resolving issues .\n• Key Technologies: Node.js, Express, MongoDB, SQL,Sequelize, REST APIs, Microservices, Git, JWT, Unit Testing(Jest,SonarQube),Azure Data Studio"
+  }
+]

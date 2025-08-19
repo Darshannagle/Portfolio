@@ -1,0 +1,49 @@
+[
+  {
+    "image": "/src/assets/clickShop.png",
+    "title": "ClickShop",
+    "description": [
+      "Ecommerce Website built using React and Spring Boot.",
+      "ClickToShop is an e-commerce platform that seamlessly integrates React for the front-end and Spring Boot for the robust backend with MySQL.",
+      "Designed to deliver a streamlined shopping experience.",
+      "Offers a range of features catering to the modern online consumer."
+    ]
+  },
+  {
+    "image": "/src/assets/Coffeeno's Cafe.png",
+    "title": "Watch Out Weather",
+    "description": [
+      "Flutter weather application fetching real-time data from a weather API.",
+      "Displays weather information in a clean and intuitive interface.",
+      "Allows users to quickly access weather details for their location.",
+      "Enables search for weather in other cities."
+    ]
+  },
+  {
+    "image": "/src/assets/clickShop.png",
+    "title": "ComTrack",
+    "description": [
+      "Slot Management application developed using Node.js and MS SQL database.",
+      "Prevents overbooking and ensures efficient scheduling.",
+      "Built with Angular, ExpressJS, and Microsoft SQL database.",
+      "Site management.",
+      "Study management.",
+      "Slot booking with verification to prevent overlapping slots.",
+      "Allocation of slots to patients based on site admin approval.",
+      "Rescheduling and cloning of slots."
+    ]
+  },
+  {
+    "image": "/src/assets/clickShop.png",
+    "title": "Harbor App",
+    "description": [
+      "Recruitment Management System for Marine Industry.",
+      "Platform for providing or seeking jobs within the marine industry.",
+      "Password-less login (OTP verification, Google, Apple).",
+      "Chat functionality.",
+      "Notification functionality.",
+      "Ratings and reviews with reward system.",
+      "Stripe payment gateway integration with transaction history."
+    ]
+  }
+]
