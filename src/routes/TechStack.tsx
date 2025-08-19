@@ -9,22 +9,27 @@ const TechStack = () => {
         variant="h3"
         textAlign="center"
         gutterBottom
-        sx={{ color: "white", fontWeight: "lighter", letterSpacing: 2 ,fontFamily:"revert"}}
+        sx={{
+          color: "white",
+          fontWeight: "lighter",
+          letterSpacing: 2,
+          fontFamily: "revert",
+        }}
       >
-         Tech Stack
+        Tech Stack
       </Typography>
 
       <Grid
         container
-        spacing={{md:4,sm:2,xs:1}}
+        spacing={{ md: 4, sm: 2, xs: 1 }}
         justifyContent="center"
         mt={4}
         sx={{ alignItems: "stretch" }}
       >
-        {techSTack.map(({ icon, label, color, description, src = "" }, i) => {
+        {techSTack.map(({ label, description, src = "" }, i) => {
           // const Icon = techStackMap[icon];
           return (
-            <Grid key={i} size={{ xs: 12, sm: 12, md: 12 }} >
+            <Grid key={i} size={{ xs: 12, sm: 12, md: 12 }}>
               <motion.div
                 whileHover={{ scale: 1.1 }}
                 style={{
@@ -35,13 +40,19 @@ const TechStack = () => {
                   sx={{
                     alignItems: "",
                     display: "flex",
-                    height: { lg:"10vw",xl:"10vw",md:"20vw",sm:"40vw",xs:"150vw"},
-                    flexDirection: { xs: "column",sm:"row", md: "row",},
+                    height: {
+                      lg: "10vw",
+                      xl: "10vw",
+                      md: "20vw",
+                      sm: "40vw",
+                      xs: "150vw",
+                    },
+                    flexDirection: { xs: "column", sm: "row", md: "row" },
                     justifyContent: "start",
                     // alignItems: "center",
                     p: 2,
                     borderRadius: 2,
-                    backgroundColor:  "#090909ff",
+                    backgroundColor: "#090909ff",
                     color: "whitesmoke",
                     border: "1px solid silver",
                   }}

@@ -27,12 +27,11 @@ const Project = ({
         image={image}
         alt={title}
         sx={{
-
-          color:"silver",
+          color: "silver",
           display: "block",
           margin: "50px auto",
-          backgroundColor:"white",
-          width: {xs:"100%",sm:"80%",},
+          backgroundColor: "white",
+          width: { xs: "100%", sm: "80%" },
           height: "auto", // keeps aspect ratio
           objectFit: "cover",
         }}
@@ -45,7 +44,7 @@ const Project = ({
           bgcolor: "transparent",
         }}
       >
-      <Typography variant="h6" sx={{color:"silver"}} gutterBottom>
+        <Typography variant="h6" sx={{ color: "silver" }} gutterBottom>
           {title}
         </Typography>
 

@@ -14,10 +14,10 @@ import Container from "@mui/material/Container";
 import Tooltip from "@mui/material/Tooltip";
 import { NavLink } from "react-router-dom";
 import { Avatar, Menu, MenuItem, useTheme } from "@mui/material";
-import Logo from "./Logo";
 import pic from "../assets/1715914840086-removebg-preview.png";
 
 import { LinkedIn, Instagram, Twitter, Email } from "@mui/icons-material";
+import type { IconType } from "react-icons/lib";
 // ✅ Memoized social media data
 const SOCIAL_LINKS = [
   {
@@ -42,27 +42,39 @@ const SOCIAL_LINKS = [
 ];
 
 // ✅ SocialIcon receives IconComponent as prop
-const SocialIcon = React.memo(({ IconComponent, label, color, link }: any) => {
-  return (
-    <NavLink to={link}>
-      <IconButton
-        aria-label={label}
-        sx={{
-          color: "white",
-          fontSize: "30px",
-          transition: "all 0.3s ease-in-out",
-          "&:hover": {
-            color: color,
-            transform: "translateY(-3px) scale(1.1)",
-            backgroundColor: `${color}20`,
-          },
-        }}
-      >
-        <IconComponent sx={{ fontSize: "inherit" }} />
-      </IconButton>
-    </NavLink>
-  );
-});
+const SocialIcon = React.memo(
+  ({
+    IconComponent,
+    label,
+    color,
+    link,
+  }: {
+    IconComponent: IconType;
+    label: string;
+    color: string;
+    link: string;
+  }) => {
+    return (
+      <NavLink to={link}>
+        <IconButton
+          aria-label={label}
+          sx={{
+            color: "white",
+            fontSize: "30px",
+            transition: "all 0.3s ease-in-out",
+            "&:hover": {
+              color: color,
+              transform: "translateY(-3px) scale(1.1)",
+              backgroundColor: `${color}20`,
+            },
+          }}
+        >
+          <IconComponent />
+        </IconButton>
+      </NavLink>
+    );
+  }
+);
 
 SocialIcon.displayName = "SocialIcon";
 

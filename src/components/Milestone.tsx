@@ -1,4 +1,8 @@
-import { LocationOnOutlined, SchoolOutlined, WorkOutline } from "@mui/icons-material";
+import {
+  LocationOnOutlined,
+  SchoolOutlined,
+  WorkOutline,
+} from "@mui/icons-material";
 import {
   TimelineItem,
   TimelineOppositeContent,
@@ -9,10 +13,15 @@ import {
 } from "@mui/lab";
 import { Paper, Typography } from "@mui/material";
 
-
-const Milestone = ({ type="",duration="", title="", description ="",location=""}) => {
+const Milestone = ({
+  type = "",
+  duration = "",
+  title = "",
+  description = "",
+  location = "",
+}) => {
   return (
-    <TimelineItem >
+    <TimelineItem>
       <TimelineOppositeContent sx={{ color: "whitesmoke" }}>
         {/* 2020 – 2024 */}
         {duration}
@@ -25,8 +34,7 @@ const Milestone = ({ type="",duration="", title="", description ="",location=""}
             padding: 1,
           }}
         >
-{          (type && type==="education")?   <SchoolOutlined />:<WorkOutline/>
-}
+          {type && type === "education" ? <SchoolOutlined /> : <WorkOutline />}
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
@@ -36,22 +44,26 @@ const Milestone = ({ type="",duration="", title="", description ="",location=""}
           sx={{
             p: 2,
             borderRadius: 2,
-            backgroundColor:  "#090909ff",
+            backgroundColor: "#090909ff",
             color: "whitesmoke",
             border: "1px solid silver",
           }}
         >
           <Typography variant="h6">{title}</Typography>
-          <Typography variant="body2"><LocationOnOutlined fontSize="small" sx={{marginTop:"5px"}}  /> {location}</Typography>
-          
+          <Typography variant="body2">
+            <LocationOnOutlined fontSize="small" sx={{ marginTop: "5px" }} />{" "}
+            {location}
+          </Typography>
+
           <Typography
             variant="body2"
             color="textSecondary"
             sx={{ color: "silver" }}
           >
-            <ul >
-
-            {description.split("\n").map((point)=><li>{point}</li>)}
+            <ul>
+              {description.split("\n").map((point) => (
+                <li>{point}</li>
+              ))}
             </ul>
           </Typography>
         </Paper>

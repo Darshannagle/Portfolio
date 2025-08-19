@@ -18,10 +18,10 @@
 }
 
 html {
-  background-color:  "#090909ff";
-
+  background-color: "#090909ff";
 }
-body {overflow-y: scroll;
+body {
+  overflow-y: scroll;
   margin: 0;
   display: flex;
   place-items: center;

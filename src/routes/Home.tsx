@@ -12,7 +12,6 @@ import {
 import type { IconType } from "react-icons/lib";
 import { TypeAnimation } from "react-type-animation";
 
-import { motion } from "framer-motion";
 import {
   SiJavascript,
   SiTypescript,
@@ -26,7 +25,7 @@ import {
   // SiMicrosoftazure,
   // SiAmazonaws,
 } from "react-icons/si";
-import { FaReact, FaJava,FaFigma } from "react-icons/fa";
+import { FaReact, FaJava, FaFigma } from "react-icons/fa";
 import { DiMsqlServer } from "react-icons/di";
 import { VscAzure } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
@@ -52,8 +51,8 @@ import techStack from "../assets/techStack.json";
 //   // { icon: SiMicrosoftazure, label: "Azure", color: "#008ad7" },
 //   // { icon: SiAmazonaws, label: "AWS", color: "#ff9900" },
 // ];
-import "../index.css"
-const techStackMap:Record<string,IconType> ={
+import "../index.css";
+const techStackMap: Record<string, IconType> = {
   SiJavascript,
   SiTypescript,
   SiNodedotjs,
@@ -65,11 +64,12 @@ const techStackMap:Record<string,IconType> ={
   SiRedis,
   FaReact,
   DiMsqlServer,
-  VscAzure,FaJava,
-  FaFigma
+  VscAzure,
+  FaJava,
+  FaFigma,
   // SiMicrosoftazure,
   // SiAmazonaws,
-} 
+};
 
 const cardData = [
   { name: "clickShop", image: clickShop },
@@ -164,29 +164,29 @@ const Home = () => {
               repeat: Infinity,
             }}
           > */}
-            {techStack.map(
-              (
-                {
-                  icon,
-                  label,
-                  color,
-                  link,
-                  src=""}: {
-                  icon: string;
-                  label: string;
-                  color: string;
-                  link: string;
-                  src:string
-                },
-                i: number
-              ) =>{ const Icon:IconType = techStackMap[icon] as IconType; 
-                return  (
-                <NavLink 
+          {techStack.map(
+            (
+              {
+                icon,
+                label,
+                link,
+                src = "",
+              }: {
+                icon: string;
+                label: string;
+                color: string;
+                link: string;
+                src: string;
+              },
+              i: number
+            ) => {
+              return (
+                <NavLink
                   to={link}
                   style={{ textDecoration: "none", color: "whitesmoke" }}
                 >
                   <Box
-                  className={"silverCard"}
+                    className={"silverCard"}
                     key={i}
                     sx={{
                       textAlign: "center",
@@ -196,8 +196,7 @@ const Home = () => {
                       },
                     }}
                   >
-                    
-                  <img src={src} alt={label} />
+                    <img src={src} alt={label} />
                     <Typography
                       variant="body2"
                       sx={{ mt: 1, fontWeight: "lighter" }}
@@ -206,8 +205,9 @@ const Home = () => {
                     </Typography>
                   </Box>
                 </NavLink>
-              )}
-            )}
+              );
+            }
+          )}
           {/* </motion.div> */}
           {/* </AnimatePresence> */}
           {/* </Carousel> */}

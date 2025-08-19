@@ -6,7 +6,7 @@ export default function ContactMe() {
     <Box
       sx={{
         p: 5,
-        bgcolor:  "#090909ff",
+        bgcolor: "#090909ff",
         color: "white",
         minHeight: "100vh",
         display: "flex",
@@ -14,7 +14,11 @@ export default function ContactMe() {
         alignItems: "center",
       }}
     >
-      <Typography variant="h3" gutterBottom sx={{ fontWeight: "bold", letterSpacing: 2 }}>
+      <Typography
+        variant="h3"
+        gutterBottom
+        sx={{ fontWeight: "bold", letterSpacing: 2 }}
+      >
         Contact Me
       </Typography>
 

@@ -9,7 +9,7 @@ import {
 import Grid from "@mui/material/Grid"; // ✅ Grid2 import
 import { NavLink, Route, Routes } from "react-router-dom";
 import { Email, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
-import { ContactMe, Projects, TechStack, AboutMe } from "./routes/index";
+import { Projects, TechStack, AboutMe } from "./routes/index";
 import "./App.css";
 import Appbar from "./components/Appbar";
 import Home from "./routes/Home";
@@ -86,7 +86,7 @@ const Sidebar = memo(() => {
       sx={{
         width: "100%",
         height: "100%",
-        display: {xl:"none",sm:"none",md:"none",lg:"flex",xl:"flex"},
+        display: { sx: "none", sm: "none", md: "none", lg: "flex", xl: "flex" },
         justifyContent: "center",
         flexDirection: "column",
         py: { xs: 2, sm: 4 },
@@ -144,15 +144,15 @@ Sidebar.displayName = "Sidebar";
 
 function App() {
   const theme = useTheme();
-  theme.palette.mode ="dark";
+  theme.palette.mode = "dark";
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <Box
       sx={{
         width: "100vw",
-        marginBottom:"20vh",
-        // overflowY: "scroll", 
+        marginBottom: "20vh",
+        // overflowY: "scroll",
         margin: 0,
         padding: 0,
         backgroundColor: "black.500",
@@ -179,7 +179,13 @@ function App() {
           }}
           sx={{
             backgroundColor: "black.800",
-            display: {xs:"none", sm:"none",md:"none",lg:"flex",xl:"flex"},
+            display: {
+              xs: "none",
+              sm: "none",
+              md: "none",
+              lg: "flex",
+              xl: "flex",
+            },
             justifyContent: "center",
             alignItems: isMobile ? "flex-start" : "center",
             minHeight: { xs: "auto", sm: "100%" },
