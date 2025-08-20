@@ -17,7 +17,6 @@ import { Avatar, Menu, MenuItem, useTheme } from "@mui/material";
 import pic from "../assets/1715914840086-removebg-preview.png";
 
 import { LinkedIn, Instagram, Twitter, Email } from "@mui/icons-material";
-import type { IconType } from "react-icons/lib";
 // ✅ Memoized social media data
 const SOCIAL_LINKS = [
   {
@@ -49,7 +48,7 @@ const SocialIcon = React.memo(
     color,
     link,
   }: {
-    IconComponent: IconType;
+      IconComponent: any;
     label: string;
     color: string;
     link: string;
@@ -68,8 +67,8 @@ const SocialIcon = React.memo(
               backgroundColor: `${color}20`,
             },
           }}
-        >
-          <IconComponent />
+        >      <IconComponent component={"div"}  />
+
         </IconButton>
       </NavLink>
     );

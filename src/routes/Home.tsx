@@ -9,75 +9,19 @@ import {
   IconButton,
   Avatar,
 } from "@mui/material";
-import type { IconType } from "react-icons/lib";
 import { TypeAnimation } from "react-type-animation";
 
-import {
-  SiJavascript,
-  SiTypescript,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiPostgresql,
-  SiMysql,
-  // SiMicrosoftsqlserver,
-  SiRedis,
-  // SiMicrosoftazure,
-  // SiAmazonaws,
-} from "react-icons/si";
-import { FaReact, FaJava, FaFigma } from "react-icons/fa";
-import { DiMsqlServer } from "react-icons/di";
-import { VscAzure } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
 import clickShop from "../assets/ClickShop.png";
 import coffeenoSCafe from "../assets/Coffeeno's Cafe.png";
 import { ArrowForwardIosRounded } from "@mui/icons-material";
 import techStack from "../assets/techStack.json";
-// const techStack = [
-//   {
-//     icon: SiJavascript,
-//     label: "JavaScript",
-//     color: "#f7df1e",
-//     link: "https://www.javascript.org/",
-//   },
-//   { icon: SiTypescript, label: "TypeScript", color: "#3178c6", link: "" },
-//   { icon: SiNodedotjs, label: "Node.js", color: "#68a063", link: "" },
-//   { icon: SiExpress, label: "Express.js", color: "#000000", link: "" },
-//   { icon: SiMongodb, label: "MongoDB", color: "#4db33d", link: "" },
-//   { icon: SiPostgresql, label: "PostgreSQL", color: "#336791", link: "" },
-//   // { icon: SiMicrosoftsqlserver, label: "MSSQL", color: "#cc2927" },
-//   { icon: SiMysql, label: "MySQL", color: "#00758f", link: "" },
-//   { icon: SiRedis, label: "Redis", color: "#d82c20", link: "" },
-//   // { icon: SiMicrosoftazure, label: "Azure", color: "#008ad7" },
-//   // { icon: SiAmazonaws, label: "AWS", color: "#ff9900" },
-// ];
+
 import "../index.css";
-const techStackMap: Record<string, IconType> = {
-  SiJavascript,
-  SiTypescript,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
-  SiPostgresql,
-  SiMysql,
-  // SiMicrosoftsqlserver,
-  SiRedis,
-  FaReact,
-  DiMsqlServer,
-  VscAzure,
-  FaJava,
-  FaFigma,
-  // SiMicrosoftazure,
-  // SiAmazonaws,
-};
 
 const cardData = [
   { name: "clickShop", image: clickShop },
   { name: "Coffeeno's Cafe", image: coffeenoSCafe },
-  // { name: "clickShop", image: clickShop },
-  // { name: "clickShop", image: clickShop },
-  // { name: "clickShop", image: clickShop },
-  // { name: "clickShop", image: clickShop },
 ];
 
 const Home = () => {
@@ -167,7 +111,6 @@ const Home = () => {
           {techStack.map(
             (
               {
-                icon,
                 label,
                 link,
                 src = "",
