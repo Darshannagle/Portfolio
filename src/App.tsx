@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid"; // ✅ Grid2 import
 import { NavLink, Route, Routes } from "react-router-dom";
-import { Email, GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { Email, GitHub, Instagram, LinkedIn } from "@mui/icons-material";
 import { Projects, TechStack, AboutMe } from "./routes/index";
 import "./App.css";
 import Appbar from "./components/Appbar";
