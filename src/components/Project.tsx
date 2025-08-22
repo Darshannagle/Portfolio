@@ -12,11 +12,11 @@ const Project = ({
   return (
     <Card
       sx={{
-        maxWidth: 400, // optional: set a max width
+        // maxWidth: 400, // optional: set a max width
         width: "100%",
-
+        height: { xs: "250vw",sm:"100vw",md:"50vw",lg:"30vw",xl:"20vw" },
         bgcolor: "#090909ff",
-        color: "whitesmoke",
+        color: "whitesmoke", 
         border: "1px solid silver",
         borderRadius: 2,
         overflow: "hidden",
@@ -31,7 +31,7 @@ const Project = ({
           display: "block",
           margin: "50px auto",
           backgroundColor: "white",
-          width: { xs: "100%", sm: "80%" },
+          width: { xs: "80%", sm: "80%",md:"20%",lg:"20%",xl:"20%" },
           height: "auto", // keeps aspect ratio
           objectFit: "cover",
         }}

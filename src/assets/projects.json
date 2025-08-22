@@ -10,7 +10,7 @@
     ]
   },
   {
-    "image": "/src/assets/Coffeeno's Cafe.png",
+    "image": "/src/assets/Watch Out Weather.png",
     "title": "Watch Out Weather",
     "description": [
       "Flutter weather application fetching real-time data from a weather API.",

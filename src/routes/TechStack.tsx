@@ -1,10 +1,10 @@
-import { Box, Typography, Grid, Card, CardContent } from "@mui/material";
+import { Box, Typography, Grid, Card, CardContent, Container } from "@mui/material";
 import { motion } from "framer-motion";
 import techSTack from "../assets/techStack.json";
 
 const TechStack = () => {
   return (
-    <Box sx={{ p: 5, color: "white", minHeight: "100vh" }}>
+    <Box sx={{ p: 5, color: "white", minHeight: "100vh",width:"100%" }}>
       <Typography
         variant="h3"
         textAlign="center"
@@ -21,7 +21,7 @@ const TechStack = () => {
 
       <Grid
         container
-        spacing={{ md: 4, sm: 2, xs: 1 }}
+        spacing={{ md: 3, sm: 2, xs: 1 }}
         justifyContent="center"
         mt={4}
         sx={{ alignItems: "stretch" }}
@@ -31,14 +31,13 @@ const TechStack = () => {
           return (
             <Grid key={i} size={{ xs: 12, sm: 12, md: 12 }}>
               <motion.div
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 1.05, }}
                 style={{
                   flex: "1 1 200px", // flex-grow, flex-shrink, flex-basis
                 }}
               >
                 <Card
                   sx={{
-                    alignItems: "",
                     display: "flex",
                     height: {
                       lg: "10vw",
@@ -49,7 +48,7 @@ const TechStack = () => {
                     },
                     flexDirection: { xs: "column", sm: "row", md: "row" },
                     justifyContent: "start",
-                    // alignItems: "center",
+                    alignItems: "center",
                     p: 2,
                     borderRadius: 2,
                     backgroundColor: "#090909ff",
@@ -57,7 +56,9 @@ const TechStack = () => {
                     border: "1px solid silver",
                   }}
                 >
+                  <Container maxWidth="lg" sx={{width: { xs:"50%",sm:"50%",md:"30%",lg:"20%",xl:"10%"}}} >
                   <img src={src} alt={label} />
+                  </Container>
                   {/* <Icon  size={50} color={color} /> */}
                   <CardContent>
                     <Typography

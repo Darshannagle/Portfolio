@@ -139,7 +139,7 @@ const Home = () => {
                       },
                     }}
                   >
-                    <img src={src} alt={label} />
+                    <img src={src} alt={label} style={{width:"20%"}}/>
                     <Typography
                       variant="body2"
                       sx={{ mt: 1, fontWeight: "lighter" }}

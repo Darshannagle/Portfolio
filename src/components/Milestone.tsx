@@ -61,7 +61,7 @@ const Milestone = ({
             sx={{ color: "silver" }}
           >
             <ul>
-              {description.split("\n").map((point) => (
+              {description && description.split("\n").map((point) => (
                 <li>{point}</li>
               ))}
             </ul>

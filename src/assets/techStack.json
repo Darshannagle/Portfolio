@@ -4,7 +4,7 @@
     "label": "JavaScript",
     "color": "#f7df1e",
     "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "src": "/src/assets/Logos/JavaScript.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     "description": "JavaScript is a versatile programming language used for both frontend and backend development. Features: dynamic typing, event-driven, supports functional & object-oriented programming, runs in browsers and Node.js. Used for building interactive web applications and server-side APIs."
   },
   {
@@ -12,7 +12,7 @@
     "label": "TypeScript",
     "color": "#3178c6",
     "link": "https://www.typescriptlang.org/",
-    "src": "/src/assets/Logos/TypeScript.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
     "description": "TypeScript is a strongly typed superset of JavaScript. Features: static typing, improved code readability, early error detection, object-oriented support. Used to write more robust and maintainable large-scale applications."
   },
   {
@@ -20,7 +20,7 @@
     "label": "Node.js",
     "color": "#68a063",
     "link": "https://nodejs.org/en/",
-    "src": "/src/assets/Logos/Node.js.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
     "description": "Node.js is a JavaScript runtime built on Chrome's V8 engine. Features: non-blocking I/O, event-driven, scalable, fast performance. Used for building APIs, backend services, and real-time applications."
   },
   {
@@ -28,7 +28,7 @@
     "label": "Express.js",
     "color": "#1a1a1a",
     "link": "https://expressjs.com/",
-    "src": "/src/assets/Logos/Express.js.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     "description": "Express.js is a minimal and flexible Node.js web application framework. Features: routing, middleware support, easy integration with databases. Used for building RESTful APIs and server-side applications."
   },
   {
@@ -36,7 +36,7 @@
     "label": "MongoDB",
     "color": "#4db33d",
     "link": "https://www.mongodb.com/",
-    "src": "/src/assets/Logos/MongoDB.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     "description": "MongoDB is a NoSQL database that stores data in JSON-like documents. Features: flexible schema, high performance, horizontal scaling, replication. Used for modern web applications, real-time analytics, and large-scale data storage."
   },
   {
@@ -44,7 +44,7 @@
     "label": "React.js",
     "color": "#61DAFB",
     "link": "https://reactjs.org/",
-    "src": "/src/assets/Logos/React.js.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     "description": "React.js is a JavaScript library for building user interfaces. Features: component-based architecture, virtual DOM, reusable UI components, fast rendering. Used to create dynamic, interactive, and responsive web applications."
   },
   {
@@ -52,7 +52,7 @@
     "label": "PostgreSQL",
     "color": "#336791",
     "link": "https://www.postgresql.org/",
-    "src": "/src/assets/Logos/PostgreSQL.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
     "description": "PostgreSQL is an advanced open-source relational database. Features: ACID compliance, extensible, supports JSON and complex queries. Used for structured data, complex transactions, and enterprise-grade applications."
   },
   {
@@ -60,7 +60,7 @@
     "label": "MySQL",
     "color": "#00758f",
     "link": "https://www.mysql.com/",
-    "src": "/src/assets/Logos/MySQL.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
     "description": "MySQL is a widely used open-source relational database. Features: reliability, scalability, ACID compliance, wide community support. Used for web applications, content management systems, and online services."
   },
   {
@@ -68,7 +68,7 @@
     "label": "Redis",
     "color": "#d82c20",
     "link": "https://redis.io/",
-    "src": "/src/assets/Logos/Redis.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
     "description": "Redis is an in-memory data store used as a database, cache, and message broker. Features: ultra-fast performance, persistence, pub/sub, data structures. Used for caching, real-time analytics, and messaging systems."
   },
   {
@@ -76,7 +76,7 @@
     "label": "Microsoft SQL Server",
     "color": "#CC2927",
     "link": "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
-    "src": "/src/assets/Logos/Microsoft SQL Server.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg",
     "description": "Microsoft SQL Server is a relational database management system. Features: ACID transactions, advanced security, analytics, reporting services. Used for enterprise applications, structured data storage, and business intelligence."
   },
   {
@@ -84,7 +84,7 @@
     "label": "Microsoft Azure",
     "color": "#0089d6",
     "link": "https://azure.microsoft.com/",
-    "src": "/src/assets/Logos/Microsoft Azure.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg",
     "description": "Microsoft Azure is a cloud computing platform. Features: virtual machines, app services, databases, AI & analytics tools. Used for deploying, managing, and scaling applications in the cloud."
   },
   {
@@ -92,7 +92,7 @@
     "label": "Java",
     "color": "#f89820",
     "link": "https://www.java.com/en/",
-    "src": "/src/assets/Logos/Java.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
     "description": "Java is a high-level, class-based, object-oriented programming language. Features: platform independence, multithreading, strong typing, robust libraries. Used for backend systems, enterprise applications, and Android development."
   },
   {
@@ -100,7 +100,31 @@
     "label": "Figma",
     "color": "#f24e1e",
     "link": "https://www.figma.com/",
-    "src": "/src/assets/Logos/Figma.png",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
     "description": "Figma is a web-based UI/UX design tool. Features: collaborative design, prototyping, vector editing, design systems. Used for designing interfaces, prototypes, and collaborative UI workflows."
+  },
+  {
+    "icon": "SiMaterialui",
+    "label": "Material UI",
+    "color": "#0081CB",
+    "link": "https://mui.com/",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+    "description": "Material UI is a popular React component library. Features: prebuilt components, responsive design, theming support. Used for building modern and responsive UIs quickly."
+  },
+  {
+    "icon": "SiLinux",
+    "label": "Linux",
+    "color": "#FCC624",
+    "link": "https://www.linux.org/",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "description": "Linux is an open-source operating system kernel. Features: security, stability, open-source community, flexibility. Used for servers, cloud environments, and development machines."
+  },
+  {
+    "icon": "SiFlutter",
+    "label": "Flutter",
+    "color": "#02569B",
+    "link": "https://flutter.dev/",
+    "src": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+    "description": "Flutter is an open-source UI toolkit by Google. Features: cross-platform development, hot reload, widget-based architecture. Used for building mobile, web, and desktop applications from a single codebase."
   }
 ]

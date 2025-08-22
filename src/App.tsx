@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import Grid from "@mui/material/Grid"; // ✅ Grid2 import
 import { NavLink, Route, Routes } from "react-router-dom";
-import { Email, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import { Email, GitHub, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
 import { Projects, TechStack, AboutMe } from "./routes/index";
 import "./App.css";
 import Appbar from "./components/Appbar";
@@ -25,9 +25,9 @@ const SOCIAL_LINKS = [
   },
   { icon: Instagram, label: "Instagram", color: "#E4405F", link: "" },
   {
-    icon: Twitter,
-    label: "Twitter",
-    color: "#1DA1F2",
+    icon: GitHub,
+    label: "Github",
+    color: "#FFFFFF",
     link: "https://github.com/Darshannagle",
   },
   {
@@ -86,7 +86,7 @@ const Sidebar = memo(() => {
       sx={{
         width: "100%",
         height: "100%",
-        display: { sx: "none", sm: "none", md: "none", lg: "flex", xl: "flex" },
+        display: { sx: "none", sm: "none", md: "flex", lg: "flex", xl: "flex" },
         justifyContent: "center",
         flexDirection: "column",
         py: { xs: 2, sm: 4 },
@@ -182,7 +182,7 @@ function App() {
             display: {
               xs: "none",
               sm: "none",
-              md: "none",
+              md: "flex",
               lg: "flex",
               xl: "flex",
             },
@@ -196,7 +196,7 @@ function App() {
 
         {/* Main Content */}
         <Grid
-          size={{ xs: 12, sm: 8, md: 9 }}
+          size={{ xs: 12, sm: 12, md: 9 }}
           sx={{
             borderLeft: "0.01px solid silver",
             backgroundColor: "black.900",

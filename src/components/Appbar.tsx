@@ -17,6 +17,7 @@ import { Avatar, Menu, MenuItem, useTheme } from "@mui/material";
 import pic from "../assets/1715914840086-removebg-preview.png";
 
 import { LinkedIn, Instagram, Twitter, Email } from "@mui/icons-material";
+import { memo } from "react";
 // ✅ Memoized social media data
 const SOCIAL_LINKS = [
   {
@@ -41,39 +42,27 @@ const SOCIAL_LINKS = [
 ];
 
 // ✅ SocialIcon receives IconComponent as prop
-const SocialIcon = React.memo(
-  ({
-    IconComponent,
-    label,
-    color,
-    link,
-  }: {
-      IconComponent: any;
-    label: string;
-    color: string;
-    link: string;
-  }) => {
-    return (
-      <NavLink to={link}>
-        <IconButton
-          aria-label={label}
-          sx={{
-            color: "white",
-            fontSize: "30px",
-            transition: "all 0.3s ease-in-out",
-            "&:hover": {
-              color: color,
-              transform: "translateY(-3px) scale(1.1)",
-              backgroundColor: `${color}20`,
-            },
-          }}
-        >      <IconComponent component={"div"}  />
-
-        </IconButton>
-      </NavLink>
-    );
-  }
-);
+const SocialIcon = memo(({ IconComponent, label, color, link }: any) => {
+  return (
+    <NavLink to={link}>
+      <IconButton
+        aria-label={label}
+        sx={{
+          color: "white",
+          fontSize: "30px",
+          transition: "all 0.3s ease-in-out",
+          "&:hover": {
+            color: color,
+            transform: "translateY(-3px) scale(1.1)",
+            backgroundColor: `${color}20`,
+          },
+        }}
+      >
+        <IconComponent sx={{ fontSize: "inherit" }} />
+      </IconButton>
+    </NavLink>
+  );
+});
 
 SocialIcon.displayName = "SocialIcon";
 
@@ -85,7 +74,7 @@ const Sidebar = React.memo(() => {
     () =>
       SOCIAL_LINKS.map(({ icon: IconComponent, label, color, link }) => (
         <SocialIcon
-          key={label}
+         key={label}
           IconComponent={IconComponent}
           label={label}
           color={color}
@@ -135,7 +124,8 @@ const Sidebar = React.memo(() => {
 
 Sidebar.displayName = "Sidebar";
 
-const pages = ["Home", "About Me", "Tech Stack", "Projects", "Contact Me"];
+//  "Contact Me"
+const pages = ["Home", "About Me", "Tech Stack", "Projects",];
 
 const settings = localStorage?.getItem("token")
   ? [
