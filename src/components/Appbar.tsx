@@ -16,7 +16,7 @@ import { NavLink } from "react-router-dom";
 import { Avatar, Menu, MenuItem, useTheme } from "@mui/material";
 import pic from "../assets/1715914840086-removebg-preview.png";
 
-import { LinkedIn, Instagram, Twitter, Email, GitHub } from "@mui/icons-material";
+import { LinkedIn, Instagram, Email, GitHub } from "@mui/icons-material";
 import { memo } from "react";
 // ✅ Memoized social media data
 const SOCIAL_LINKS = [

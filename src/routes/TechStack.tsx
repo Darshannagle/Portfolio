@@ -1,10 +1,17 @@
-import { Box, Typography, Grid, Card, CardContent, Container } from "@mui/material";
+import {
+  Box,
+  Typography,
+  Grid,
+  Card,
+  CardContent,
+  Container,
+} from "@mui/material";
 import { motion } from "framer-motion";
 import techSTack from "../assets/techStack.json";
 
 const TechStack = () => {
   return (
-    <Box sx={{ p: 5, color: "white", minHeight: "100vh",width:"100%" }}>
+    <Box sx={{ p: 5, color: "white", minHeight: "100vh", width: "100%" }}>
       <Typography
         variant="h3"
         textAlign="center"
@@ -31,7 +38,7 @@ const TechStack = () => {
           return (
             <Grid key={i} size={{ xs: 12, sm: 12, md: 12 }}>
               <motion.div
-                whileHover={{ scale: 1.05, }}
+                whileHover={{ scale: 1.05 }}
                 style={{
                   flex: "1 1 200px", // flex-grow, flex-shrink, flex-basis
                 }}
@@ -56,8 +63,23 @@ const TechStack = () => {
                     border: "1px solid silver",
                   }}
                 >
-                  <Container maxWidth="lg" sx={{width: { xs:"50%",sm:"50%",md:"30%",lg:"20%",xl:"10%"}}} >
-                  <img src={src} alt={label} />
+                  <Container
+                    maxWidth="lg"
+                    sx={{
+                      width: {
+                        xs: "50%",
+                        sm: "50%",
+                        md: "30%",
+                        lg: "20%",
+                        xl: "10%",
+                      },
+                    }}
+                  >
+                    <img
+                      src={src}
+                      alt={label}
+                      style={{ width: "100%", height: "100%" }}
+                    />
                   </Container>
                   {/* <Icon  size={50} color={color} /> */}
                   <CardContent>
