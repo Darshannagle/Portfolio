@@ -125,6 +125,7 @@ const Home = () => {
             ) => {
               return (
                 <NavLink
+                  key={link}
                   to={link}
                   style={{ textDecoration: "none", color: "whitesmoke" }}
                 >
@@ -139,7 +140,7 @@ const Home = () => {
                       },
                     }}
                   >
-                    <img src={src} alt={label} style={{width:"20%"}}/>
+                    <img src={src} alt={label} style={{ width: "20%" }} />
                     <Typography
                       variant="body2"
                       sx={{ mt: 1, fontWeight: "lighter" }}

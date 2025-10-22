@@ -11,7 +11,13 @@ import {
   TimelineConnector,
   TimelineContent,
 } from "@mui/lab";
-import { Paper, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Paper,
+  Typography,
+} from "@mui/material";
 
 const Milestone = ({
   type = "",
@@ -21,7 +27,7 @@ const Milestone = ({
   location = "",
 }) => {
   return (
-    <TimelineItem>
+    <TimelineItem key={title}>
       <TimelineOppositeContent sx={{ color: "whitesmoke" }}>
         {/* 2020 – 2024 */}
         {duration}
@@ -38,34 +44,56 @@ const Milestone = ({
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
-      <TimelineContent>
+      <TimelineContent sx={{ minWidth: { xs: "80%" } }}>
         <Paper
           elevation={3}
           sx={{
-            p: 2,
+            m: 0,
+            p: 0,
             borderRadius: 2,
-            backgroundColor: "#090909ff",
-            color: "whitesmoke",
             border: "1px solid silver",
+            // width: "100%",
+
+            // backgroundColor: "#090909ff",
           }}
         >
-          <Typography variant="h6">{title}</Typography>
-          <Typography variant="body2">
-            <LocationOnOutlined fontSize="small" sx={{ marginTop: "5px" }} />{" "}
-            {location}
-          </Typography>
-
-          <Typography
-            variant="body2"
-            color="textSecondary"
-            sx={{ color: "silver" }}
+          <Accordion
+            sx={{
+              // width: "100%",
+              border: "1px solid silver",
+              p: 2,
+              backgroundColor: "#090909ff",
+              color: "whitesmoke",
+            }}
           >
-            <ul>
-              {description && description.split("\n").map((point) => (
-                <li>{point}</li>
-              ))}
-            </ul>
-          </Typography>
+            <AccordionSummary>
+              <Typography variant="h6">{title}</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <Typography variant="body2">
+                <LocationOnOutlined
+                  fontSize="small"
+                  sx={{ marginTop: "5px" }}
+                />{" "}
+                {location}
+              </Typography>
+
+              <ul>
+                {description &&
+                  description?.split("\n").map((point) => (
+                    <li key={point}>
+                      <Typography
+                        variant="body2"
+                        color="textSecondary"
+                        sx={{ color: "silver" }}
+                      >
+                        {point}
+                      </Typography>
+                    </li>
+                  ))}
+              </ul>
+            </AccordionDetails>
+          </Accordion>
         </Paper>
       </TimelineContent>
     </TimelineItem>

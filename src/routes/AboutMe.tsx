@@ -10,7 +10,8 @@ const AboutMe = () => {
       {Milestones &&
         Milestones.map((mileStone) => (
           <Milestone
-            type={mileStone.type}
+            key={mileStone?.title}
+            type={mileStone?.type}
             duration={mileStone?.duration}
             title={mileStone?.title}
             description={mileStone?.description}

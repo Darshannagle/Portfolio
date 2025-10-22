@@ -11,7 +11,7 @@ import techSTack from "../assets/techStack.json";
 
 const TechStack = () => {
   return (
-    <Box sx={{ p: 5, color: "white", minHeight: "100vh", width: "100%" }}>
+    <Box sx={{ p: 1, color: "white", minHeight: "100vh", width: "95%" }}>
       <Typography
         variant="h3"
         textAlign="center"
@@ -43,7 +43,7 @@ const TechStack = () => {
                   flex: "1 1 200px", // flex-grow, flex-shrink, flex-basis
                 }}
               >
-                <Card
+                <Card elevation={5}
                   sx={{
                     display: "flex",
                     height: {
@@ -51,7 +51,7 @@ const TechStack = () => {
                       xl: "10vw",
                       md: "20vw",
                       sm: "40vw",
-                      xs: "150vw",
+                      xs: "120vw",
                     },
                     flexDirection: { xs: "column", sm: "row", md: "row" },
                     justifyContent: "start",
@@ -60,18 +60,18 @@ const TechStack = () => {
                     borderRadius: 2,
                     backgroundColor: "#090909ff",
                     color: "whitesmoke",
-                    border: "1px solid silver",
+                    border: "0.5px solid silver",
                   }}
                 >
                   <Container
-                    maxWidth="lg"
+                    maxWidth={false}
                     sx={{
                       width: {
                         xs: "50%",
                         sm: "50%",
                         md: "30%",
                         lg: "20%",
-                        xl: "10%",
+                        xl: "1%",
                       },
                     }}
                   >
